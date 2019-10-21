@@ -370,7 +370,7 @@
         "model_non_printing": [122, 122, 122, 255],
 
         "xray": [26,  26,  62, 255],
-        "xray_error": [255,  0,  0, 255],
+        "xray_error": [0,  0,  0, 255],
 
         "layerview_ghost": [31, 31, 31, 95],
         "layerview_none": [255, 255, 255, 255],
