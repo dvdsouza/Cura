@@ -13,6 +13,7 @@ from UM.View.GL.OpenGL import OpenGL
 from cura.Scene.CuraSceneNode import CuraSceneNode
 from UM.Scene.Iterator.DepthFirstIterator import DepthFirstIterator
 
+
 class XRayPass(RenderPass):
     def __init__(self, width, height):
         super().__init__("xray", width, height)
@@ -23,7 +24,7 @@ class XRayPass(RenderPass):
 
     def render(self):
         if not self._shader:
-            self._shader = OpenGL.getInstance().createShaderProgram(os.path.join(PluginRegistry.getInstance().getPluginPath("XRayView"), "xray.shader"))
+            self._shader = OpenGL.getInstance().createShaderProgram(os.path.join(PluginRegistry.getInstance().getPluginPath("SolidView"), "xray.shader"))
 
         batch = RenderBatch(self._shader, type = RenderBatch.RenderType.NoType, backface_cull = False, blend_mode = RenderBatch.BlendMode.Additive)
         for node in DepthFirstIterator(self._scene.getRoot()):
