@@ -10,10 +10,7 @@
         "y_axis": [64, 64, 255, 255],
         "model_default": [156, 201, 36, 255],
         "model_overhang": [200, 0, 255, 255],
-
         "model_selection_outline": [12, 169, 227, 255],
-
-        "xray": [26,  26,  62, 255],
         "xray_error": [0,  0,  0, 255],
 
         "layerview_inset_0": [255, 64, 0, 255],
